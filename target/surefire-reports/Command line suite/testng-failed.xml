@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.qtpselenium.facebook.pom.testcases.ProfileTest">
+        <methods>
+          <include name="testProfile"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.facebook.pom.testcases.ProfileTest -->
+      <class name="com.qtpselenium.facebook.pom.testcases.LoginTest">
+        <methods>
+          <include name="quit"/>
+          <include name="doLogin" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- com.qtpselenium.facebook.pom.testcases.LoginTest -->
+      <class name="com.qtpselenium.facebook.pom.testcases.ChangePasswordTest">
+        <methods>
+          <include name="quit"/>
+          <include name="changePasswordTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.facebook.pom.testcases.ChangePasswordTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46161" started-at="2017-07-25T15:36:36Z" finished-at="2017-07-25T15:37:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46161" started-at="2017-07-25T15:36:36Z" finished-at="2017-07-25T15:37:22Z">
+      <class name="com.qtpselenium.facebook.pom.testcases.ProfileTest">
+        <test-method status="FAIL" signature="testProfile()[pri:0, instance:com.qtpselenium.facebook.pom.testcases.ProfileTest@47987356]" name="testProfile" duration-ms="45874" started-at="2017-07-25T11:36:36Z" finished-at="2017-07-25T11:37:22Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+ted startup sequence
+1500996998474	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1500996998474	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1500996998475	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1500996998605	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500996998605	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 19
+1500996998605	DeferredSave.extensions.json	DEBUG	Starting timer
+1500996998613	addons.repository	DEBUG	No addons.json found.
+1500996998613	DeferredSave.addons.json	DEBUG	Save changes
+1500996998615	DeferredSave.addons.json	DEBUG	Starting timer
+1500996998661	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1500996998661	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1500996998661	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1500996998673	DeferredSave.extensions.json	DEBUG	Starting write
+1500996998675	DeferredSave.addons.json	DEBUG	Starting write
+1500996998691	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500996998694	DeferredSave.addons.json	DEBUG	Write succeeded
+2017-07-25 11:36:39.393 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-07-25 11:36:39.852 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-07-25 11:36:40.151 plugin-container[80280:1769536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x923b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-07-25 11:36:40.153 plugin-container[80280:1769536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9503, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-07-25 11:36:53.179 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 6.6.0
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1500997013185	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.50
+1500997013186	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1500997013428	addons.manager	DEBUG	shutdown
+1500997013429	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1500997013429	addons.xpi	DEBUG	shutdown
+1500997013429	addons.xpi-utils	DEBUG	shutdown
+1500997013430	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1500997013431	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1500997013433	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1500997013434	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1500997013436	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1500997013440	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1500997013444	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'sean-it.thegarden.com', ip: '10.200.15.57', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+ted startup sequence
+1500996998474	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1500996998474	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1500996998475	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1500996998605	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500996998605	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 19
+1500996998605	DeferredSave.extensions.json	DEBUG	Starting timer
+1500996998613	addons.repository	DEBUG	No addons.json found.
+1500996998613	DeferredSave.addons.json	DEBUG	Save changes
+1500996998615	DeferredSave.addons.json	DEBUG	Starting timer
+1500996998661	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1500996998661	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1500996998661	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1500996998673	DeferredSave.extensions.json	DEBUG	Starting write
+1500996998675	DeferredSave.addons.json	DEBUG	Starting write
+1500996998691	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500996998694	DeferredSave.addons.json	DEBUG	Write succeeded
+2017-07-25 11:36:39.393 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-07-25 11:36:39.852 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-07-25 11:36:40.151 plugin-container[80280:1769536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x923b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-07-25 11:36:40.153 plugin-container[80280:1769536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9503, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-07-25 11:36:53.179 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 6.6.0
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1500997013185	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.50
+1500997013186	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1500997013428	addons.manager	DEBUG	shutdown
+1500997013429	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1500997013429	addons.xpi	DEBUG	shutdown
+1500997013429	addons.xpi-utils	DEBUG	shutdown
+1500997013430	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1500997013431	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1500997013433	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1500997013434	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1500997013436	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1500997013440	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1500997013444	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'sean-it.thegarden.com', ip: '10.200.15.57', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.qtpselenium.facebook.pom.testcases.base.BaseTest.init(BaseTest.java:41)
+	at com.qtpselenium.facebook.pom.testcases.ProfileTest.testProfile(ProfileTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+ted startup sequence
+1500996998474	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1500996998474	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1500996998475	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1500996998605	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500996998605	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 19
+1500996998605	DeferredSave.extensions.json	DEBUG	Starting timer
+1500996998613	addons.repository	DEBUG	No addons.json found.
+1500996998613	DeferredSave.addons.json	DEBUG	Save changes
+1500996998615	DeferredSave.addons.json	DEBUG	Starting timer
+1500996998661	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1500996998661	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1500996998661	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1500996998673	DeferredSave.extensions.json	DEBUG	Starting write
+1500996998675	DeferredSave.addons.json	DEBUG	Starting write
+1500996998691	DeferredSave.extensions.json	DEBUG	Write succeeded
+1500996998694	DeferredSave.addons.json	DEBUG	Write succeeded
+2017-07-25 11:36:39.393 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-07-25 11:36:39.852 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+2017-07-25 11:36:40.151 plugin-container[80280:1769536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x923b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-07-25 11:36:40.153 plugin-container[80280:1769536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9503, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-07-25 11:36:53.179 firefox-bin[80279:1769333] IMKInputSession presentFunctionRowItemTextInputViewWithEndpoint:completionHandler: : [self textInputContext]=0x123efbac0 *NO* NSRemoteViewController to client, NSError=Error Domain=NSCocoaErrorDomain Code=4097 "connection from pid 0" UserInfo={NSDebugDescription=connection from pid 0}, com.apple.inputmethod.EmojiFunctionRowItem
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 6.6.0
+1500997013184	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1500997013185	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.50
+1500997013186	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1500997013428	addons.manager	DEBUG	shutdown
+1500997013429	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1500997013429	addons.xpi	DEBUG	shutdown
+1500997013429	addons.xpi-utils	DEBUG	shutdown
+1500997013430	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1500997013431	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1500997013433	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1500997013434	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1500997013436	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1500997013440	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1500997013444	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProfile -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.facebook.pom.testcases.ProfileTest@47987356]" name="quit" is-config="true" duration-ms="266" started-at="2017-07-25T11:37:22Z" finished-at="2017-07-25T11:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.qtpselenium.facebook.pom.testcases.ProfileTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
