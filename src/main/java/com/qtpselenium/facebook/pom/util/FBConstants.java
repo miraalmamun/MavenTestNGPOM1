@@ -3,12 +3,16 @@ package com.qtpselenium.facebook.pom.util;
 import java.util.Hashtable;
 
 public class FBConstants {
-	public static final boolean GRID_RUN=false;
+	public static final boolean GRID_RUN=true;
 	
 	//paths
 	//public static final String CHROME_DRIVER_EXE="F:\\chromedriver.exe";
-	public static final String CHROME_DRIVER_EXE=System.getProperty("user.dir")+"//chromedriver";
-	public static final String Gecko_DRIVER_EXE=System.getProperty("user.dir")+"//geckodriver";
+	public static final String CHROME_DRIVER_EXE=System.getProperty("user.dir")+"//chromedriver.exe";
+	public static final String Gecko_DRIVER_EXE=System.getProperty("user.dir")+"//geckodriver.exe";
+	
+	
+	
+	
 	
 	
 	// locators
@@ -24,6 +28,13 @@ public class FBConstants {
 	public static final String SAVE_CHANGES = "//label[@class='submit uiButton uiButtonConfirm']";
 	public static final String KILL_SESSION = "//input[@value='kill_sessions']";
 	public static final String CONTINUE_PASSWORD_CHANGE_BUTTON = "//button[text()='Continue']";
+	
+	
+	//Iscript URLS 
+	public static final String iScriptHome = "https://www.demo.iscripts.com/multicart/demo/index.php";
+
+	
+	
 	
 	// URLs-prod
 	public static final String PROD_HOMEPAGE_URL = "http://facebook.com";

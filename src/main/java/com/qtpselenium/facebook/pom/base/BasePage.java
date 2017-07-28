@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qtpselenium.facebook.pom.pages.common.TopMenu;
@@ -44,6 +45,36 @@ public class BasePage {
 		return "";
 	}
 	
+	
+	public void clickLink(String locator)
+	{
+		
+		
+		driver.findElement(By.xpath(locator)).click();
+		hardwait();
+		//return false;
+	}
+	
+	public void typeText(String locator, String value)
+	{
+		
+		
+		driver.findElement(By.xpath(locator)).clear();
+		driver.findElement(By.xpath(locator)).sendKeys(value);
+		//hardwait();
+		//return false;
+	}
+	
+	
+	public void hardwait()
+	{
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public boolean isElementPresent(String locator){
 		test.log(LogStatus.INFO, "Trying to find element -> "+locator);
 		int s = driver.findElements(By.xpath(locator)).size();
@@ -57,6 +88,8 @@ public class BasePage {
 		}
 			
 	}
+	
+	
 	
 	public TopMenu getMenu(){
 		return menu;

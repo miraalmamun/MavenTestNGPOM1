@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qtpselenium.facebook.pom.testcases.ProfileTest">
+      <class name="com.iscript.tesecases.LoginTest">
         <methods>
-          <include name="testProfile"/>
           <include name="quit"/>
+          <include name="LandOnIscriptHomePage"/>
         </methods>
-      </class> <!-- com.qtpselenium.facebook.pom.testcases.ProfileTest -->
+      </class> <!-- com.iscript.tesecases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

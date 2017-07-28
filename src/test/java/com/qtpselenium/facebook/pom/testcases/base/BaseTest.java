@@ -12,9 +12,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.SessionId;
 
 import com.qtpselenium.facebook.pom.util.ExtentManager;
 import com.qtpselenium.facebook.pom.util.FBConstants;
@@ -29,6 +30,17 @@ public class BaseTest {
 	public Xls_Reader xls = new Xls_Reader(FBConstants.DATA_XLS_PATH);
 
 	
+	//===== Sauce Connect Credentials 
+ 	public static final String USERNAME = "MDRasul";
+ 	public static final String ACCESS_KEY = "1df585b2-88bc-4578-8a98-c920e9eaf383";
+ 	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
+	
+ 	public static  SessionId mySessionID;
+	DesiredCapabilities myBrowserCapability = new DesiredCapabilities();
+	static String myScreenResolutionCapability = "screenresolution";
+
+ 	
+ 	
 	public WebDriver driver;
 	public void init(String bType){
 		test.log(LogStatus.INFO, "Opening browser - "+ bType);
@@ -38,7 +50,7 @@ public class BaseTest {
 			if(bType.equals("Mozilla"))
 			{
 				System.setProperty("webdriver.gecko.driver", FBConstants.Gecko_DRIVER_EXE);
-				driver= new FirefoxDriver();
+				//driver= new FirefoxDriver();
 			}
 			else if(bType.equals("Chrome"))
 			{
@@ -48,30 +60,45 @@ public class BaseTest {
 		}
 		else
 		{
+
 			// grid
 			DesiredCapabilities cap=null;
-			if(bType.equals("Mozilla")){
+			if(bType.equals("Mozilla"))
+			{
 				cap = DesiredCapabilities.firefox();
+
+				cap.setCapability("name", "Test Case Name");
+
 				cap.setBrowserName("firefox");
 				cap.setJavascriptEnabled(true);
 				cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 				
-			}else if(bType.equals("Chrome")){
+			}
+			else if(bType.equals("Chrome"))
+			{
 				 cap = DesiredCapabilities.chrome();
+				 cap.setCapability("name", "Test Case Name");
 				 cap.setBrowserName("chrome");
+				 cap.setCapability(myScreenResolutionCapability,"1600x1200");    			
 				 cap.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 			}
 			
-			try {
-				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
+			try 
+			{
+			    driver = new RemoteWebDriver(new URL(URL), cap);
+			} 
+			catch (Exception e) 
+			{
 				e.printStackTrace();
 			}
+		
+			
+			
 		}
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		test.log(LogStatus.INFO, "Opened browser successfully - "+ bType);
+		mySessionID = ((RemoteWebDriver)driver).getSessionId();	
 
 	}
 	
@@ -81,7 +108,8 @@ public class BaseTest {
 		Assert.fail(failureMessage);
 	}
 	
-	public void takeScreenShot(){
+	public void takeScreenShot()
+	{
 		Date d=new Date();
 		String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
 		String filePath=FBConstants.REPORTS_PATH+"screenshots//"+screenshotFile;
