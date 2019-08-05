@@ -1,1 +1,1 @@
-# MavenTestNGPOM1
+# MavenTestNGPOM1_Project
